@@ -248,3 +248,25 @@ public void delete(@PathVariable String userId, @RequestParam String account) {
     System.out.println(account);
 }
 ```
+---
+## 😮 Object Mapper
+- Text JSON -> Object
+- Object -> Text JSON
+- controller req json(text) -> object
+- response object -> json(text) 
+ 
+ ```java
+ObjectMapper objectMapper = new ObjectMapper();
+
+//object > text
+//object mapper get method 활용한다.
+User user = new User("hyunho", 19, "010-1234-3948");
+String text = objectMapper.writeValueAsString(user);
+System.out.println(text);
+
+//text > object
+//object mapper는 default 생성자가 필요하다.
+Object objectUser = objectMapper.readValue(text, User.class);
+System.out.println(objectUser);
+ ```
+
