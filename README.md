@@ -12,4 +12,4 @@
 - [스프링을 좀 더 보자](#)
 - [스프링 기능 활용](#)
 - ✔[서버 간 연결](./study/server-to-server.md)
-- [JUnit 테스트](#)
+- ✔[JUnit 테스트](./study/junit.md)
